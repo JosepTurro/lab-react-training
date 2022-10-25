@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.IdCard{
+ border: 2px solid black;
+ display: flex;
+ margin: 10px;
+ 
+
+}
+
+.imgUsuari{
+  margin: 7px;
+  height: 200px;
+}
+
+span{
+  font-weight: bold;
+}
+.textUsuari{
+  text-align: left;
+}
