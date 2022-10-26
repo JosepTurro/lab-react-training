@@ -1,7 +1,8 @@
 import React from "react";
 
-function IdCard({lastName, firstName, gender, height, birth, picture}){ // aixo es destructuring i es aixo const {lastNAme, firstName, gender, height, birthl, picture}=props
+function IdCard({lastName, firstName, gender, height, birth, picture}){ // això és destructuring i és això const {lastNAme, firstName, gender, height, birthl, picture}=props
     console.log("last name bbb: ", lastName)
+    
      return (
         <div className="IdCard">
              <img src={picture} alt="Foto usuari" className="imgUsuari" />
@@ -10,7 +11,7 @@ function IdCard({lastName, firstName, gender, height, birth, picture}){ // aixo 
                 <ls><p><span>Last name: </span>{lastName}</p></ls>
                 <ls><p><span>Gender: </span>{gender}</p></ls>
                 <ls><p><span>Height: </span>{height}</p></ls>
-                <ls><p><span>Birth: </span>{birth.toDateString()}</p></ls>
+                <ls><p><span>Birth: </span>{birth.toDateString()}</p></ls> 
             </ul>
            
 
@@ -19,3 +20,5 @@ function IdCard({lastName, firstName, gender, height, birth, picture}){ // aixo 
 };
 
 export default IdCard;
+
+//linea 14 parem atenció Date és una classe nativa de javaScript. objecte ---> string = toDateString() 

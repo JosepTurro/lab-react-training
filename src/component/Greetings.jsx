@@ -1,7 +1,7 @@
 import React from "react";
 
-function Greetings({lang, children}){ // aixo es destructuring i es aixo const {llang, children}=props
-    console.log("children: ",children );
+function Greetings({lang, children}){ // això és destructuring i és això const {llang, children}=props
+    console.log("children: ",children ); // children és el text
     let salutacio;
      if(lang === "de" || lang ==="De" ) {salutacio = "Hallo "}
      else if(lang === "en"|| lang === "En"){salutacio="Hi "}
@@ -19,4 +19,4 @@ function Greetings({lang, children}){ // aixo es destructuring i es aixo const {
 export default Greetings;
 
 
-// , "en", "es" or "fr"
+//string.toLowerCase
